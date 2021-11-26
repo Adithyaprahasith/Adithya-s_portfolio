@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pagestyle.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:royalblue;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 480px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: skyblue;
+}
+
+.container {
+  margin-left: 400px;
+  margin-top: -500px;
+  width: 600px;
+  height: 520px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.h3 {
+  margin-left: 220px;
+}
+nav {
+    height: 80px;
+}
+</style>
+</head>
+<body>
+<nav>
+            <img src="images/aplogo.jpeg" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+<div class="ad1">
+        <img src="images/an1.png" class="an1">
+    </div>
+
+<div class="container">
+  <h3 class='h3'>  Contact Me</h3><br>
+  <form action="">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your Fullname">
+
+    <label for="lname">Email ID</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Email ID">
+
+    <label for="country">Country</label>
+    <select id="country" name="country" style="height:30px;">
+      <option value="India">India</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something/feedback" style="height:90px"></textarea>
+    <input type="submit" value="Submit" onclick=" alert('Thanks for your interest, this page is stil in development!!')">
+  </form>
+</div>
+
+</body>
+</html>
+
